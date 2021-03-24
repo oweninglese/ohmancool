@@ -1,0 +1,6 @@
+.git
+tmp
+__pycache__
+config.py
+app/secret.py
+

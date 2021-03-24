@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="field-body box">
+        <h1>New Article</h1>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>Title
+            {{ form.title(size=25) }}<br>
+            
+            </p>
+            <textarea class="field-body body" rows="6" cols="75" name="body">
+        
+           </textarea>
+            <br>
+            </p>
+            {{ form.submit() }}</p>
+        </form>
+    </div>
+{% endblock %}

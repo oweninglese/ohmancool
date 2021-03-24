@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="aboutme">
+    {% for contact in contacts %}
+    <div class="box">
+        <div id="blurb">
+            <h1 class='aboutme'>{{ contact.first }} is a full-stack web developer based in Toronto ON, Canada.</h1>
+            <div class="row" style="display: flex;justify-content: center;">
+                <h2 id="talkbubble" class='aboutme'>If you wish you may contact me through <a class="email" href="">linkedin</a>, or by <a class="email" href="mailto:{{ contact.email }}">:email:</a></h2>
+           
+            <img class="image" src="/static/img/aboutme-1.jpg" alt="Working hard, or, hardly working">
+            </div>
+            <h2 class='aboutme'>You may find a selection of work at <a href="https://github.com/oweninglese">github</a> and made available on this site.</h2>
+       
+        <div id="skills">
+            <h3 class="list">
+                <ul>
+                    {{ contact.skills }}
+                </ul>
+            </h3></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

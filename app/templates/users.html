@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1>Users list</h1>
+    {% for user in users %}
+        <li.box><p.blog>{{  user.username  }}
+        </p></li>
+    {% endfor %}
+{% endblock %}

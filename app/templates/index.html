@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <link rel="shortcut icon" href="/static/favicon.png" />
+    <title>ohman.cool</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="footer head" style="width: 100%;display: flex;justify-content: space-around;">
+            <img class="link logo" src="/static/img/logo.png" />
+            <a class="links" href="/contact">contact</a>
+            <a class="links" href="/">portfolio</a>                
+            <img class="link logo" src="/static/img/logo.png" />
+
+        </div>
+            <span class='box side-projects'><p>{{ current_user.username }}
+            </p></span>
+        </span>
+        <div class="ohman-content flex-container">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+    <script type='text/javascript' src='/static/js/ohmancool.js'></script>
+    <!-- JavaScript Bundle with Popper 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>-->
+
+</body>
+</html>

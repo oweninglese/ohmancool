@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="slider">
+    <div class="slides">
+        {% for post in posts %}
+            <div class="slide">
+                <a class="alink" href="{{ post.body }}">{{ post.title }}</a>
+                <a href="{{ post.body }}"/>
+                    <img class="link" src="/static/img/under_construction-{{ post.id }}.jpg" alt="{{ post.title }}">
+                </a>
+            </div>
+        {% endfor %}            
+    </div>
+</div>
+{% endblock %}
